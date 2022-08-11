@@ -14,7 +14,6 @@ import com.example.demo.dto.TestRequestBodyDTO;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
 
 @RestController	// 이 어노테이션을 이용하면 http와 관련된 코드 및 요청/응답 매핑을 스프링이 알아서 해준다.
 @RequestMapping("test") // 리소스
