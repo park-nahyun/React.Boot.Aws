@@ -13,7 +13,7 @@ public interface TodoRepository extends JpaRepository<TodoEntity, String>{
 	
 	// JpaRepository 가 제공하는 기본 쿼리가 아닌 복잡한 쿼리들은 @Query 어노테이션을 사용해 지정할 수 있다.
 	// ?1은 메서드 매개변수의 순서 위치다.
-	@Query("select * from Todo t where t.userId = ?1")
+	@Query("from Todo t where t.userId = ?1")
 	List<TodoEntity> findByUserId(String userId);
 	
 }
