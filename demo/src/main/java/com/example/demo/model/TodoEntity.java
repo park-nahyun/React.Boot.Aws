@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Entity(name = "Todo")	// 이 클래스를 엔티티로 지정한다. 이름을 지정하고 싶다면 @Entity("이름") 이렇게..
+@Entity(name = "Todo") // 이 클래스를 엔티티로 지정한다. 이름을 지정하고 싶다면 @Entity("이름") 이렇게..
 @Table(name = "Todo") // 데이터베이스의  Todo 테이블에 매핑된다는 뜻
 public class TodoEntity {
 
@@ -27,6 +27,7 @@ public class TodoEntity {
 	private String userId; // 이 오브젝트를 생성한 사용자의 아이디
 	private String title; // Todo 타이틀(예: 운동하기)
 	private boolean done; // true - todo를 완료한 경우(checked)
+
 	
 }
 
